@@ -51,7 +51,7 @@ client.on("message", async (message) => {
     }
 });
 
-client.login(config.token);                                                                        //loga no bot pra poder executar td isso
+client.login(process.env.BOT_TOKEN);                                                                        //loga no bot pra poder executar td isso
 
 //para de olhar aqui poha
 //- mene paradino

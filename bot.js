@@ -5,7 +5,7 @@ const config = require("./config.json")                                         
 client.on("ready", () => {                                                                        //se o bot tiver pronto vai executar td dentro desse bloco
     console.log(`Defoko 2.1`)
     console.log(`prontuh, creditor al le mene paradino`)
-    client.user.setActivity(`君は実にばかだな ty paradino for making my dream real owu`);
+    client.user.setActivity(process.env.STATUS);
 });
 
 client.on("message", async (message) => {

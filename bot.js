@@ -9,7 +9,7 @@ client.on("ready", () => {                                                      
 });
 
 client.on("message", async (message) => {
-    const args = message.content.slice(!!).trim().split(/ +/g);
+    const args = message.content.slice(process.env.PREFIX).trim().split(/ +/g);
     const comando = args.shift().toLowerCase();
 
     const server = message.guild.channels;                                                        //declara uma variavel que é o servidor

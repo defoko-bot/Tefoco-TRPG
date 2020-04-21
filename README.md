@@ -1,6 +1,7 @@
 # Utane Uta's Thermonuclear RPG
 
 #Commands/Comandos
+
 !!lol = caga o servidor inteiro, cria salas de texto e de voz com nomes aleatorios / fucks the whole server, creates text and voice channels with random names
 
 !!del = deleta tudo e só deixa uma sala de texto com nome aleatório / deletes everything and only let a text channel w a random name

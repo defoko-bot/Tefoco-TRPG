@@ -1,6 +1,5 @@
 const Discord = require("discord.js");                                                            //declara que o bot usa a livraria discord.js
 const client = new Discord.Client();                                                              //declara que o bot é um client do discord
-const config = require("./config.json")                                                           //declara que o bot precisa do arquivo config.json
 
 client.on("ready", () => {                                                                        //se o bot tiver pronto vai executar td dentro desse bloco
     console.log(`Defoko 2.1`)
@@ -9,7 +8,7 @@ client.on("ready", () => {                                                      
 });
 
 client.on("message", async (message) => {
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(process.env.PREFIX).trim().split(/ +/g);
     const comando = args.shift().toLowerCase();
 
     const server = message.guild.channels;                                                        //declara uma variavel que é o servidor

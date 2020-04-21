@@ -1,5 +1,5 @@
 {
-  "name": "Setsudo-chan",
+  "name": "Tefoco's Thermonuclear RPG",
   "version": "1.0.0",
   "description": "Um bot foda",
   "main": "bot.js",
@@ -7,13 +7,9 @@
     "start": "node bot.js"
   },
   "keywords": [],
-  "author": "bola rosa inflável com asma#3529",
+  "author": "espirro de pika#3529",
   "license": "ISC",
   "dependencies": {
     "discord.js": "11.5.1",
-    "download-file": "0.1.5",
-    "gif-to-apng": "0.1.2",
-    "jimp": "0.9.3",
-    "lowdb": "1.0.0"
   }
 }

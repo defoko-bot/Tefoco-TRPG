@@ -50,7 +50,7 @@ client.on("message", async (message) => {
     }
     if(message.content === 'a'){
 	    message.delete();
-	    message.channel.send(`bomdia mensagem urgente do paradino: nao da pra me tirakkkk`);
+	    message.channel.send(`nao :sunglasses:`);
     }
 });
 

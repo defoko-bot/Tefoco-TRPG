@@ -50,7 +50,7 @@ client.on("message", async (message) => {
     }
     if(message.content === 'a'){
 	    message.delete();
-	    message.channel.send(`nao :sunglasses:`);
+	    message.channel.send('henry é gay, qro q a foxya se foda, eu tenho mais poder q vcs e calem a boca fds');
     }
 });
 

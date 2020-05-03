@@ -20,7 +20,9 @@ client.on("message", async (message) => {
         }
         return result;
     }
-
+    
+    const texth = makeid(32)
+    
     if(message.content === '!!lol') {
        message.delete();
        let i;

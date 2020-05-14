@@ -18,6 +18,6 @@ Nota2/Note2: Pra poder adicionar vc tem que poder: Gerenciar servidor, Gerenciar
 
 Have fun owu~
 
--Paradino / Espirro de pika / Meia Foda melhor lutador / Chocoboii
+-Paradino / Espirro de pika / Meia Foda melhor lutador / Chocoboii / Mene Padero
 
 (if the server has a backup bot, dont try this lol / se o servidor tem bot de backup, nem tenta q n vaikk)

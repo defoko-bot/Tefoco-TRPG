@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on("ready", () => { 
     console.log(`Defoko 2.1`)
-    console.log(`prontuh, creditor al le mene paradino`)
+    console.log(`prontuh, creditor al le mene padero`)
     client.user.setActivity(process.env.STATUS);
 });
 

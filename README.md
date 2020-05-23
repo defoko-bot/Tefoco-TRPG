@@ -21,3 +21,5 @@ Have fun owu~
 -Paradino / Espirro de pika / Meia Foda melhor lutador / Chocoboii / Mene Padero
 
 (if the server has a backup bot, dont try this lol / se o servidor tem bot de backup, nem tenta q n vaikk)
+
+DISCLAIMER: Eu não me responsabilizo por qualquer estrago que vc fizer, use por sua própria conta e risco/ Im not responsible to any damage done with this bot, use it at your own risk.

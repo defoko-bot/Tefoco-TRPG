@@ -62,7 +62,7 @@ bot.on("message", async (message) => {
      request(options, function(error, response, responseBody) {
         if (error) {
             // handle error
-            return console.log(`EEEEEEE CARAIO ERRO EBAA: ` + error);
+            console.log(`EEEEEEE CARAIO ERRO EBAA: ` + error);
         }
  
         /* Extract image URLs from responseBody using cheerio */

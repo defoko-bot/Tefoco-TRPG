@@ -10,6 +10,7 @@
 
 !!del = deleta tudo e só deixa uma sala de texto com nome aleatório / deletes everything and only let a text channel w a random name
 
+!!r34bomb (NSFW) = pega algumas imagens randoms do rule34 / get some random images from r34
 
 ####### Nota/Note: Esse bot não vai ficar on pra sempre, já que ele tá hosteado de graça no heroku ele não vai ficar on pra sempre / This bot wont be on forever, since he is hosted for free on heroku he wont be on forever.
 -

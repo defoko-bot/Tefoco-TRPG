@@ -61,7 +61,7 @@ bot.on("message", async (message) => {
 	};
 	request(options, function(error, response, responseBody) {
         if (error) {
-            return message.channel.send(`Erro eee ${error}`);
+            return;
         }
  
  

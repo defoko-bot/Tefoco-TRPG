@@ -88,8 +88,8 @@ bot.on("message", async (message) => {
         message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
         message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
 	
-	}
-    });
+	});
+    }
     
     switch (args[0]) {
        case 'lol':

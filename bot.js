@@ -89,6 +89,12 @@ bot.on("message", async (message) => {
 
   // Send result
         message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
+	message.channel.send( urls[imageIndexToReturn] );
         
  });
 

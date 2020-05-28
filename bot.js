@@ -2,7 +2,7 @@ const { Client, Attachment } = require("discord.js");
 const bot = new Client();
 const cheerio = require("cheerio")
 const request = require("request")
-bot.commands = new Discord.Collection();
+bot.commands = new Client.Collection();
  
 fs.readdir("./comandos/", (err, files) => {
     if (err) console.error(err);

@@ -125,7 +125,6 @@ bot.on("message", async (message) => {
 		THIS IS A NSFW COMMAND
 	    */
 	    message.channel.send(`HentaiBomb em 2 segundos, fechem os olhos crianças `)
-            sleep(2000)
 	    image()
        break; 
     }

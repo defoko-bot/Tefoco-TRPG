@@ -49,7 +49,7 @@ bot.on("message", async (message) => {
     }
     function image(){
 	let randomstuff = ['anal', 'futa', 'furry', 'cum', 'breasts', '1boy', '1girls', 'male', 'female', 'gay'];
-	let randomcategory = randmizr(0, randomstuff.length-1);
+	let randomcategory = randmizr(1, randomstuff.length-1);
 	let tag = randomstuff[randomcategory];
 	message.channel.send(`${tag}`)
 	let options = {

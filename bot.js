@@ -77,7 +77,7 @@ bot.on("message", async (message) => {
         var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
         console.log(urls);
         if (!urls.length) {
-            return;
+            message.channel.send(`nenhum hentaizera veio, tenta usar o cloudscraper ae men`)
         }
  
         // Send result

@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { Client, Attachments } = require("discord.js")
 
 exports.run = (bot, message, args) => {
     function makeid(length) { //peguei do stack overflow n lembro onde

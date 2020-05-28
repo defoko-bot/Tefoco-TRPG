@@ -41,9 +41,6 @@ bot.on("message", async (message) => {
         }
         return result;
     }
-    function emoji(id){
-	 return bot.emojis.get(id).toString();
-    }
     function randmizr(min, max){
 	 let step1 = max - min + 1;
 	 let step2 = Math.random * step1;
@@ -128,7 +125,8 @@ bot.on("message", async (message) => {
 		IF YOUR UNDERAGE GET OUT OF HERE
 		THIS IS A NSFW COMMAND
 	    */
-	    message.channel.send(`HentaiBomb em 2 segundos, fechem os olhos crianças ` + emoji("616026244823384065"))
+	    message.channel.send(`HentaiBomb em 2 segundos, fechem os olhos crianças `)
+            sleep(2000)
 	    image()
        break; 
     }

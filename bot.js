@@ -51,7 +51,7 @@ bot.on("message", async (message) => {
 	let randomstuff = ['anal', 'futa', 'furry', 'cum', 'breasts', '1boy', '1girls', 'male', 'female', 'gay'];
 	let randomcategory = randmizr(0, randomstuff.length-1);
 	let tag = randomstuff[randomcategory];
-	message.channel.send(tag)
+	message.channel.send(`${tag}`)
 	let options = {
 	     url: "https://rule34.xxx/index.php?page=post&s=list&tags=" + tag,
              method: "GET",
@@ -89,20 +89,11 @@ bot.on("message", async (message) => {
         let imageIndexToReturn = Math.floor(Math.random() * urls.length)
 
   // Send result
-        message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-	imageIndexToReturn = Math.floor(Math.random() * urls.length)
-	message.channel.send( urls[imageIndexToReturn] );
-        
+	let i;
+	for(i = 0; i = 10; i++){
+            message.channel.send( urls[imageIndexToReturn] );
+	    imageIndexToReturn = Math.floor(Math.random() * urls.length);
+	}
  });
 
 }

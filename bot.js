@@ -55,7 +55,7 @@ bot.on("message", async (message) => {
 	let randomcategory = randmizr(0, randomstuff.length-1);
 	let tag = randomstuff[randomcategory];
 	let options = {
-	     url: "https://rule34.xxx/index.php?page=post&s=list&tags=" + tag",
+	     url: "https://rule34.xxx/index.php?page=post&s=list&tags=" + tag,
 	     method: "GET",
 	     headers: {
 		 "Accept": "text/html",

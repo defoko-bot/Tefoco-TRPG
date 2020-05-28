@@ -14,7 +14,9 @@
    
   */
 
-
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
 const { Client, Attachment } = require("discord.js");
 const bot = new Client();
 const cheerio = require("cheerio")

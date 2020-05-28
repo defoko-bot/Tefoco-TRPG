@@ -132,7 +132,7 @@ bot.on("message", async (message) => {
 	    image()
        break; 
     }
-}});
+});
 
 bot.login(process.env.BOT_TOKEN);
 

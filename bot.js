@@ -86,15 +86,21 @@ bot.on("message", async (message) => {
         }
         
         // Return a random image
-        var imageIndexToReturn = Math.floor(Math.random() * urls.length)
+        let imageIndexToReturn = Math.floor(Math.random() * urls.length)
 
   // Send result
         message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
+	imageIndexToReturn = Math.floor(Math.random() * urls.length)
 	message.channel.send( urls[imageIndexToReturn] );
         
  });

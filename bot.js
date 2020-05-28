@@ -1,3 +1,10 @@
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+const { Client, Attachment } = require("discord.js");
+const bot = new Client();
+const cheerio = require("cheerio")
+const request = require("request")
 bot.commands = new Discord.Collection();
  
 fs.readdir("./comandos/", (err, files) => {
@@ -13,14 +20,13 @@ fs.readdir("./comandos/", (err, files) => {
  
 bot.on('ready', () => {
     console.log(`Bot foi iniciado com sucesso`);
-    bot.user.setActivity("musicas no Spotify", {type: "LISTENING"});
+    bot.user.setActivity("vivendo a vida nas boas");
 });
  
 bot.on('message', message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
  
-    let prefix = "!!";
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
     let args = messageArray.slice(1);

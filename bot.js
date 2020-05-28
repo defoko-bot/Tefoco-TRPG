@@ -62,7 +62,7 @@ bot.on("message", async (message) => {
      request(options, function(error, response, responseBody) {
         if (error) {
             // handle error
-            return;
+            return console.log(`EEEEEEE CARAIO ERRO EBAA: ` + error);
         }
  
         /* Extract image URLs from responseBody using cheerio */
@@ -77,7 +77,6 @@ bot.on("message", async (message) => {
         var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
         console.log(urls);
         if (!urls.length) {
-            // Handle no results
             return;
         }
  

@@ -15,11 +15,11 @@ bot.on('message', (message) => {
     let comando = message.content.split(" ");
     
     switch('comando'){
-      image(
+      image()
     } 
 });
  
-function image(message, parts) {
+function image(message) {
     const tags = ['anal', 'futa', '1girl', '1boy', 'cum', 'furry', 'oral', 'all']
     let search = tags[Math.floor(Math.random() * tags.length)]
     var options = {

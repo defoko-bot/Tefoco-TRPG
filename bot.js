@@ -52,7 +52,9 @@ bot.on('message', (message) => {
     let comando = message.content.split(" ");
     
     switch('comando'){
+      case '!!bomb':
       image()
+      break;
     } 
 });
 bot.login(process.env.BOT_TOKEN);

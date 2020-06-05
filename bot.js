@@ -35,9 +35,10 @@ function image(message) {
             // Handle no results
             return console.log(`nenhum link veio mermão`);
         }
+        var imageIndexToReturn = Math.floor(Math.random() * urls.length)
  
         // Send result
-        message.channel.send(pick);
+        message.channel.send(urls[imageIndexToReturn]);
     });
 }
 

@@ -40,7 +40,7 @@ function image(message) {
         // Send result
         message.channel.send(pick);
     });
-
+}
 
 bot.on('ready', () => {
     console.log(`Bot foi iniciado com sucesso`);

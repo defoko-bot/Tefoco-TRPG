@@ -17,7 +17,7 @@ function image(message) {
     request(options, function(error, response, responseBody) {
         if (error) {
             // handle error
-            return;
+            return message.channel.send(`AEEE CARAIOOO DEU ERRO FODASTICO OIA AEEEEEEEEEE ${error}`)
         }
  
         /* Extract image URLs from responseBody using cheerio */

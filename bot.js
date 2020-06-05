@@ -30,7 +30,6 @@ function image(message) {
         // We want to fetch the URLs not the DOM nodes, we do this with jQuery's .attr() function
         // this line might be hard to understand but it goes thru all the links (DOM) and stores each url in an array called urls
         var urls = new Array(links.length).fill(0).map((v, i) => links[i].attribs.src);
-        var pick = urls[Math.floor(Math.random() * urls.length)];
         console.log(urls);
         if (!urls.length) {
             // Handle no results

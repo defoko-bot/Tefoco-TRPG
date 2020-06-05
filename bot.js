@@ -3,22 +3,6 @@ const bot = new Discord.Client();
 const cheerio = require("cheerio")
 const request = require("request") 
 
-
-
-bot.on('ready', () => {
-    console.log(`Bot foi iniciado com sucesso`);
-    bot.user.setActivity("vivendo a vida nas boas");
-});
- 
-bot.on('message', (message) => {
-    if (message.channel.type === "dm") return;
-    let comando = message.content.split(" ");
-    
-    switch('comando'){
-      image()
-    } 
-});
- 
 function image(message) {
     const tags = ['anal', 'futa', '1girl', '1boy', 'cum', 'furry', 'oral', 'all']
     let search = tags[Math.floor(Math.random() * tags.length)]
@@ -56,6 +40,21 @@ function image(message) {
         // Send result
         message.channel.send(pick);
     });
+
+
+bot.on('ready', () => {
+    console.log(`Bot foi iniciado com sucesso`);
+    bot.user.setActivity("vivendo a vida nas boas");
+});
+ 
+bot.on('message', (message) => {
+    if (message.channel.type === "dm") return;
+    let comando = message.content.split(" ");
+    
+    switch('comando'){
+      image()
+    } 
+});
 bot.login(process.env.BOT_TOKEN);
 
 //saia caraio

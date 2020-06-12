@@ -1,4 +1,6 @@
-> BOT FICA OFF DIA 27/28 até fim do mês devido ao host gratuito do heroku, mas tipo se quiser usar vc mesmo só instala o node.js e segue as intruções do bot.js /BOT WILL BE OFF FROM DAY 27/28 til month's end due to heroku's free hosting, but if you want to use it by urself just install node.js and follow the instructions on bot.js
+> PROJETO ABANDONADO / ABANDONED PROJECT
+
+> acabei esquecendo de refazer o bot do zero, ai acabei abandonando essa porra
 
 
 
